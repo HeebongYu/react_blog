@@ -30,6 +30,7 @@ export default function Header() {
                         <a href="/join">JOIN</a>
                     </li>
                     <li>
+                        <Link to="/login">LOGIN</Link>
                         <a href="/login">LOGIN</a>
                     </li>
                 </ul>
