@@ -5,6 +5,7 @@
     display: block;
     background: #eee;
     border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
 }
 .post__header {
     width: 100%;
@@ -14,9 +15,9 @@
     overflow: hidden;
     background: #000;
     border-radius: 10px 10px 0 0;
-    background-position: center;
+    /*background-position: center;*/
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 250px;
 }
 .post__body {
     text-align: left;
@@ -57,4 +58,15 @@
     color: #777;
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+    .post {
+        width: 48%;
+    }
+}
+@media (max-width: 700px) {
+    .post {
+        width: 98%;
+    }
 }

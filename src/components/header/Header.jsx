@@ -17,13 +17,13 @@ export default function Header() {
                         <Link to="/">HOME</Link>
                     </li>
                     <li>
-                        <a href="/">ABOUT</a>
+                        <Link to="/mypage">MYPAGE</Link>
                     </li>
                     <li>
-                        <a href="/">CONTACT</a>
+                        <Link to="/View">VIEW</Link>
                     </li>
                     <li>
-                        <a href="/">WRITE</a>
+                        <Link to="/write">WRITE</Link>
                     </li>
                     <li>
                         <Link to="/join">JOIN</Link>

@@ -1,4 +1,5 @@
 import React from "react";
+import "./home.css";
 import Posts from "../../components/posts/Posts";
 import Side from "../../components/side/Side";
 
