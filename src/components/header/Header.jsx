@@ -15,7 +15,6 @@ export default function Header() {
                 <ul>
                     <li>
                         <Link to="/">HOME</Link>
-                        <a href="/">HOME</a>
                     </li>
                     <li>
                         <a href="/">ABOUT</a>
@@ -27,11 +26,10 @@ export default function Header() {
                         <a href="/">WRITE</a>
                     </li>
                     <li>
-                        <a href="/join">JOIN</a>
+                        <Link to="/join">JOIN</Link>
                     </li>
                     <li>
                         <Link to="/login">LOGIN</Link>
-                        <a href="/login">LOGIN</a>
                     </li>
                 </ul>
             </nav>
