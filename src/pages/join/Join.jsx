@@ -4,19 +4,19 @@ import "./join.css";
 export default function Join() {
     return (
         <main id="contents">
-            <h2 class="ir_so">컨텐츠 영역</h2>
-            <section class="join-type gray">
-                <div class="member-form">
+            <h2 className="ir_so">컨텐츠 영역</h2>
+            <section className="join-type gray">
+                <div className="member-form">
                     <h3>회원가입</h3>
-                    <ul class="list">
+                    <ul className="list">
                         <li>회원가입은 1인당 1개의 이메일 계정을 사용할 수 있습니다.</li>
                         <li>
                             개인정보를 수집 및 이용하며, 회원의 개인정보는를 안전하게 취급하고, 교육을 목적으로
                             사용됩니다.
                         </li>
                     </ul>
-                    <h4 class="mt30 mb10">개인정보 수집 및 이용에 대한 안내</h4>
-                    <div class="member-form2 blue mb50">
+                    <h4 className="mt30 mb10">개인정보 수집 및 이용에 대한 안내</h4>
+                    <div className="member-form2 blue mb50">
                         <ul>
                             <li>
                                 목적 : 가입자 개인 식별, 가입 의사 확인, 가입자와의 원활한 의사소통, 가입자와의 교육
@@ -29,106 +29,105 @@ export default function Join() {
                                 간주합니다.
                             </li>
                         </ul>
-                        <span class="check">
+                        <span className="check">
                             <input type="checkbox" name="joinCheck" id="joinCheck"></input>
-                            <label for="joinCheck">약관에 동의합니다.</label>
+                            <label htmlFor="joinCheck">약관에 동의합니다.</label>
                         </span>
                     </div>
-
-                    <form action="joinSave.php" name="join" method="post" onsubmit="return joinChecks()">
+                    <form action="joinSave.php" name="join" method="post" /*onSubmit="return joinChecks()"*/>
                         <fieldset>
-                            <legend class="ir_so">회원가입 입력폼</legend>
-                            <div class="join-box">
-                                <div class="overlap">
-                                    <label for="youEmail">이메일</label>
+                            <legend className="ir_so">회원가입 입력폼</legend>
+                            <div className="join-box">
+                                <div className="overlap">
+                                    <label htmlFor="youEmail">이메일</label>
                                     <input
                                         type="email"
                                         id="youEmail"
                                         name="youEmail"
                                         placeholder="Sample@naver.com"
-                                        autocomplete="off"
-                                        autofocus
+                                        autoComplete="off"
+                                        autoFocus
                                     ></input>
-                                    <a href="#c" class="test" onclick="emailChecking()">
+                                    <a href="#c" className="test" /*onClick="emailChecking()"*/>
                                         중복검사
                                     </a>
-                                    <p class="comment" id="youEmailComment"></p>
+                                    <p className="comment" id="youEmailComment"></p>
                                 </div>
-                                <div class="overlap">
-                                    <label for="youNickName">닉네임</label>
+                                <div className="overlap">
+                                    <label htmlFor="youNickName">닉네임</label>
                                     <input
                                         type="text"
                                         id="youNickName"
                                         name="youNickName"
                                         placeholder="닉네임을 적어주세요!"
                                     ></input>
-                                    <a href="#c" class="test" onclick="nickChecking()">
+                                    <a href="#c" className="test" /*onClick={"nickChecking()"}*/>
                                         중복검사
                                     </a>
-                                    <p class="comment" id="youNickNameComment"></p>
+                                    <p className="comment" id="youNickNameComment"></p>
                                 </div>
-                                <div class="basic">
-                                    <label for="youPass">비밀번호</label>
+                                <div className="basic">
+                                    <label htmlFor="youPass">비밀번호</label>
                                     <input
                                         type="password"
                                         id="youPass"
                                         name="youPass"
-                                        maxlength="20"
+                                        maxLength="20"
                                         placeholder="비밀번호를 적어주세요."
-                                        autocomplete="off"
+                                        autoComplete="off"
                                     ></input>
-                                    <p class="comment" id="youPassComment"></p>
+                                    <p className="comment" id="youPassComment"></p>
                                 </div>
-                                <div class="basic">
-                                    <label for="youPassC">비밀번호 확인</label>
+                                <div className="basic">
+                                    <label htmlFor="youPassC">비밀번호 확인</label>
                                     <input
                                         type="password"
                                         id="youPassC"
                                         name="youPassC"
-                                        maxlength="20"
+                                        maxLength="20"
                                         placeholder="다시 비밀번호를 적어주세요."
-                                        autocomplete="off"
+                                        autoComplete="off"
                                     ></input>
-                                    <p class="comment" id="youPassComment"></p>
+                                    <p className="comment" id="youPassComment"></p>
                                 </div>
-                                <div class="basic">
-                                    <label for="youName">이름</label>
+                                <div className="basic">
+                                    <label htmlFor="youName">이름</label>
                                     <input
                                         type="text"
                                         id="youName"
                                         name="youName"
-                                        maxlength="5"
+                                        maxLength="5"
                                         placeholder="이름을 적어주새요."
-                                        autocomplete="off"
+                                        autoComplete="off"
                                     ></input>
-                                    <p class="comment" id="youNameComment"></p>
+                                    <p className="comment" id="youNameComment"></p>
                                 </div>
-                                <div class="basic">
-                                    <label for="youBirth">생년월일</label>
+                                <div className="basic">
+                                    <label htmlFor="youBirth">생년월일</label>
                                     <input
                                         type="text"
                                         id="youBirth"
                                         name="youBirth"
-                                        maxlength="12"
+                                        maxLength="12"
                                         placeholder="YYYY-MMM-DD"
-                                        autocomplete="off"
+                                        autoComplete="off"
                                     ></input>
-                                    <p class="comment" id="youBirthComment"></p>
+                                    <p className="comment" id="youBirthComment"></p>
                                 </div>
-                                <div class="basic">
-                                    <label for="youPhone">휴대폰 번호</label>
+                                <div className="basic">
+                                    <label htmlFor="youPhone">휴대폰 번호</label>
                                     <input
                                         type="text"
                                         id="youPhone"
                                         name="youPhone"
-                                        maxlength="15"
+                                        maxLength="15"
                                         placeholder="000-0000-0000"
-                                        autocomplete="off"
+                                        autoComplete="off"
                                     ></input>
-                                    <p class="comment" id="youPhonComment"></p>
+                                    <p className="comment" id="youPhonComment"></p>
                                 </div>
                             </div>
-                            <button id="joinBtn" class="join-submit" type="submit">
+                            <button id="joinBtn" className="join-submit" type="submit">
                                 회원가입 완료
                             </button>
                         </fieldset>

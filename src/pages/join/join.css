@@ -1,7 +1,7 @@
 /* join */
-/* 회원가입, 로그인 : join-type */
 .join-type {
-    padding: 150px 0;
+    background-color: #badada;
+    padding: 150px 2%;
 }
 
 .member-form {
@@ -216,11 +216,16 @@
     background: #fff;
     cursor: pointer;
 }
+@media (max-width: 1200px) {
+    .join-type {
+        padding: 12vw 2%;
+    }
+}
 @media (max-width: 450px) {
     .member-form .member-form2 {
         height: 262px;
     }
     .join-type {
-        padding: 0 0;
+        padding: 0;
     }
 }
