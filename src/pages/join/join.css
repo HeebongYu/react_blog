@@ -1,7 +1,7 @@
 /* join */
 .join-type {
     background-color: #badada;
-    padding: 150px 2%;
+    padding: 100px 2%;
 }
 
 .member-form {
@@ -215,11 +215,6 @@
     box-shadow: inset 0 0 0 2px #222;
     background: #fff;
     cursor: pointer;
-}
-@media (max-width: 1200px) {
-    .join-type {
-        padding: 12vw 2%;
-    }
 }
 @media (max-width: 450px) {
     .member-form .member-form2 {

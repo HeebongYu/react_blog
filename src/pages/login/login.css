@@ -1,7 +1,7 @@
 /* login */
 .login__type {
     background-color: #badada;
-    padding: 150px 2%;
+    padding: 100px 2%;
 }
 .login__form {
     max-width: 665px;
@@ -40,9 +40,4 @@
 }
 .login__btn:hover {
     cursor: pointer;
-}
-@media (max-width: 1200px) {
-    .login__type {
-        padding: 12vw 2%;
-    }
 }

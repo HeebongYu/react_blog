@@ -17,19 +17,19 @@ export default function Header() {
                         <Link to="/">HOME</Link>
                     </li>
                     <li>
-                        <Link to="/mypage">MYPAGE</Link>
-                    </li>
-                    <li>
-                        <Link to="/View">VIEW</Link>
-                    </li>
-                    <li>
-                        <Link to="/write">WRITE</Link>
-                    </li>
-                    <li>
                         <Link to="/join">JOIN</Link>
                     </li>
                     <li>
                         <Link to="/login">LOGIN</Link>
+                    </li>
+                    <li>
+                        <Link to="/mypage">MYPAGE</Link>
+                    </li>
+                    <li>
+                        <Link to="/view">VIEW</Link>
+                    </li>
+                    <li>
+                        <Link to="/write">WRITE</Link>
                     </li>
                 </ul>
             </nav>

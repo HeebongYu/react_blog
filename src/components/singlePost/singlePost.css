@@ -1,0 +1,19 @@
+.single__post {
+    /* margin: 100px 0; */
+    background: #fff;
+    padding: 50px;
+    width: 68%;
+    min-height: 600px;
+}
+.single__post h4 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-bottom: 0.6em;
+}
+.single__post .desc {
+    padding-top: 20px;
+    line-height: 1.8;
+}
+.single__post .desc p {
+    padding-top: 20px;
+}
