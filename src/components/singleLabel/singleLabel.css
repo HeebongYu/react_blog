@@ -21,7 +21,7 @@
     z-index: -1;
 }
 .view__label .title {
-    font-size: 50px;
+    font-size: 3.2vw;
     margin-bottom: 10px !important;
     font-weight: 400;
     padding: 0;
@@ -48,4 +48,9 @@
     padding-top: 10px;
     margin: 0 2px;
     display: inline-block;
+}
+@media (max-width: 1000px) {
+    .view__label {
+        padding: 100px 0;
+    }
 }

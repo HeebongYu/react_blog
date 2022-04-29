@@ -1,5 +1,4 @@
 .single__post {
-    /* margin: 100px 0; */
     background: #fff;
     padding: 50px;
     width: 68%;
@@ -16,4 +15,10 @@
 }
 .single__post .desc p {
     padding-top: 20px;
+}
+@media (max-width: 1000px) {
+    .single__post {
+        margin: 0 auto;
+        width: 90%;
+    }
 }
