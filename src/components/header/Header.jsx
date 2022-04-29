@@ -6,9 +6,9 @@ export default function Header() {
     return (
         <header id="header">
             <h1 className="logo">
-                <a href="/">
+                <Link to="/">
                     React <em>blog</em>
-                </a>
+                </Link>
             </h1>
             <nav className="menu">
                 <h2 className="ir_so">메인 메뉴</h2>

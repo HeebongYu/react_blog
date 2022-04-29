@@ -32,10 +32,12 @@
 }
 #header .menu li a {
     padding: 20px 30px;
+    opacity: 0.9;
     display: inline-block;
 }
 #header .menu li a:hover {
-    background: #f5f5f5;
+    background: #cfecec;
+    opacity: 1;
     border-radius: 5px;
 }
 #header .member {

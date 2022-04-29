@@ -1,5 +1,5 @@
-.blog__write {
-    margin-top: 100px;
+#write__wrap {
+    background-color: #badada;
 }
 .blog__write {
     text-align: left;
