@@ -5,18 +5,19 @@ export default function Mypage() {
     return (
         <main id="contents">
             <h2 className="ir_so">컨텐츠 영역</h2>
-            <section className="join-type">
-                <div className="member-form">
+            <section className="mypage__wrap">
+                <div className="mypage__form">
                     <h3>회원정보</h3>
-                    <div className="join-intro">
-                        <div className="modify_img">
-                            <div htmlFor="youPhoto" className="youFace youFace2">
-                                <img src="../assets/img/mypage/" alt="이미지"></img>
-                            </div>
+                    <div className="mypage__intro">
+                        <div className="face">
+                            <img
+                                src="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                                alt="이미지"
+                            ></img>
                         </div>
-                        <div className="intro">자기소개:</div>
                     </div>
-                    <div className="join-info">
+                    <div className="mypage__info">
+                        <div className="intro">자기소개해주세요~</div>
                         <ul>
                             <li>
                                 <strong>이메일</strong>
@@ -38,11 +39,19 @@ export default function Mypage() {
                                 <strong>번호</strong>
                                 <span>010-7579-0168</span>
                             </li>
+                            <li>
+                                <strong>성별</strong>
+                                <span>남자</span>
+                            </li>
+                            <li>
+                                <strong>사이트</strong>
+                                <span>https://hb-react-blog.netlify.app/</span>
+                            </li>
                         </ul>
                     </div>
-                    <div className="join-btn">
-                        <a href="/">수정하기</a>
-                        <a href="/">탈퇴하기</a>
+                    <div className="mypage__btn">
+                        <button href="/">수정하기</button>
+                        <button href="/">탈퇴하기</button>
                     </div>
                 </div>
             </section>

@@ -7,8 +7,8 @@ export default function Login() {
             <h2 className="ir_so">컨텐츠 영역</h2>
             <section className="login__type">
                 <div className="login__form">
-                    <h3 className="mb30">로그인</h3>
-                    <form action="loginSave.php" name="login" method="post">
+                    <h3>로그인</h3>
+                    <form>
                         <fieldset>
                             <legend className="ir_so">회원가입 입력폼</legend>
                             <div className="login__box">
@@ -37,7 +37,7 @@ export default function Login() {
                                     ></input>
                                 </div>
                             </div>
-                            <button id="joinBtn" className="login__btn" type="submit">
+                            <button id="loginBtn" className="login__btn" type="submit">
                                 로그인
                             </button>
                         </fieldset>
